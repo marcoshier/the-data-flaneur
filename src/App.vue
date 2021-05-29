@@ -1,28 +1,53 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Homepage />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Homepage from './components/Homepage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Homepage
   }
 }
 </script>
 
 <style>
+@font-face {
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik-300-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../src/assets/fonts/Graphik-400-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, 'Graphik', Helvetica, Arial, sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
+  overflow-x: hidden;
+  background: black;
 }
+
+.section {
+        height: calc(100vh - 100px);
+        box-sizing: content-box;
+        padding: 10%;
+}
+
+.section-title {
+  line-height: 1.5;
+  font-size: 100px;
+  font-weight: 300;
+}
+
+
 </style>
