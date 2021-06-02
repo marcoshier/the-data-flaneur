@@ -32,6 +32,7 @@ export default {
     padding: 0 10% 10% 10% ;
     box-sizing: border-box;
     background: rgb(231, 231, 231);
+    margin-top: 130px;
 }
 
 .with-love {

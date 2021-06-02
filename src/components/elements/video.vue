@@ -16,6 +16,7 @@ export default {
 
 #main-cnt {
     padding: 0 !important;
+    border: none !important;
 }
 
 .video {
