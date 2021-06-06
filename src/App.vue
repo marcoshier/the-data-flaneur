@@ -38,7 +38,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   color: white;
-  overflow-x: hidden;
   background: black;
   overflow: -moz-scrollbars-none;
   scrollbar-width: none;
@@ -48,8 +47,10 @@ export default {
 
 .section {
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  overflow: hidden;
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  /*overflow: hidden;*/
 }
 
 .section-title {
@@ -62,6 +63,9 @@ export default {
   box-sizing: border-box;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  background: black;
+  
  
 }
 

@@ -19,7 +19,7 @@
 export default {
     name: 'Date',
     props: {
-        day: Number,
+        day: String,
         month: String,
         text: String
     }

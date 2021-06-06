@@ -1,5 +1,5 @@
 <template>
-  <div id="content-cnt" class="section content-section">
+  <div class="section content-section">
       <div class="section-title">
           <h3>{{ title }}</h3>
           <h3>1</h3>
@@ -56,4 +56,8 @@ canvas {
     height: 350px;
 }
 
+.section-title {
+   position: sticky;
+   top: 100px;
+}
 </style>
