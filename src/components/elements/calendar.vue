@@ -6,10 +6,12 @@
             <h3>2</h3>
         </div>
       <div class="calendar subsection">
-          <Date day="19" month="june" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic dicta mollitia deserunt blanditiis dignissimos facere? Sit nihil non mollitia, consequatur expedita debitis. Quibusdam accusamus corporis doloremque quo ullam optio ipsam."/>     
-          <Date day="30" month="September" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic dicta mollitia deserunt blanditiis dignissimos facere? Sit nihil non mollitia, consequatur expedita debitis. Quibusdam accusamus corporis doloremque quo ullam optio ipsam."/>    
+          <Date day="10-11" month="june 2021"/>     
+          <div class="location-cnt">
+              <img class="location" src="../../assets/location.png" />
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -22,7 +24,6 @@ export default {
     },
     props: {
         title: String,
-        desc: String
     }
 }
 </script>
@@ -34,9 +35,39 @@ export default {
     flex-direction: row;
 }
 
+iframe {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
 .section-title {
    position: sticky;
-   top: 100px;
+   top: 70px;
 }
+
+.location-cnt { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 50%;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+.location  {
+    width: 100%;
+    height: 80%;
+}
+
+@media screen and (max-width: 950px){
+ .location-cnt {
+    padding: 0 100px 80px 100px
+  }
+ }
+
+
+
 
 </style>

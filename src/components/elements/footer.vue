@@ -29,6 +29,7 @@ export default {
 
 #footer {
     height: 80vh;
+    width: 100vw;
     padding: 0 10% 10% 10% ;
     box-sizing: border-box;
     background: rgb(231, 231, 231);
@@ -72,5 +73,17 @@ p {
     font-weight: 300;
     padding: 0 40px;
 }
+
+@media screen and (max-width: 736px) {
+.quick-links {
+    grid-column-gap: 10px;
+}
+
+#footer {
+    padding: 0 10% 10% 3% ;
+}
+
+}
+
 
 </style>

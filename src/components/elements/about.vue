@@ -36,6 +36,6 @@ export default {
 
     .section-title  {
         position: sticky;
-        top: 100px;
+        top: 70px;
     }
 </style>

@@ -39,10 +39,6 @@ export default {
   text-rendering: optimizeLegibility;
   color: white;
   background: black;
-  overflow: -moz-scrollbars-none;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  
 }
 
 .section {
@@ -93,7 +89,7 @@ export default {
 }
 
 .reversed {
-  flex-direction: row-reverse !important;
+  flex-direction: row-reverse;
 }
 
 .subsection-image {
@@ -130,5 +126,36 @@ export default {
 }
 
 
+
+/* SMALL DESKTOP / IPAD */
+
+@media screen and (max-width: 950px){
+  .subsection {
+    flex-direction: column !important;
+  }
+  
+  .subsection-image {
+    padding: 100px 0;
+  }
+
+  .subsection-text, .reversed .subsection-text {
+    padding: 0 135px 115px 135px;
+    text-align: center;
+  }
+
+ 
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 736px) {
+  .content-section {
+      margin: 0;
+  }
+
+    .subsection-text, .reversed .subsection-text {
+    padding: 0 25px 115px 25px;
+  }
+}
 
 </style>

@@ -2,9 +2,9 @@
   <div id="home-cnt">
     <Header />
     <Video id="main-cnt" />
-    <Concept id="concept-cnt" title="Concept" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor." />
-    <Calendar  id="calendar-cnt" title="Calendar" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor."/>
-    <About id="about-cnt" title="Who are we?" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor." />
+    <Concept id="concept-cnt" title="Concept" />
+    <Calendar  id="calendar-cnt" title="Calendar"/>
+    <About id="about-cnt" title="Who are we?" />
     <Footer />
   </div>
 </template>

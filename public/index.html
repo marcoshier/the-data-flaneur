@@ -4,14 +4,38 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width,initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            font-size: 16px;
+            background: black;
+            font-family: "Gustavo", Arial, sans-serif;
+            font-weight: 400;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            overflow: -moz-scrollbars-none;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        
+        body::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+    </style>
     <title>
         <%= htmlWebpackPlugin.options.title %>
     </title>
 </head>
 
-<body style="overflow-x: hidden">
+<body style="overflow-x: hidden; padding-right: 17px; box-sizing: content-box; scrollbar-width: none; box-sizing: border-box;">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>

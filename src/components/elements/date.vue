@@ -7,11 +7,10 @@
             <div class="month">
                 {{ month }}
             </div>
+            <div class="location-text">
+                Smart@Sea Scheveningen
+            </div>
           </div>
-        <div class="text">
-            <p>{{ text }}
-            </p>
-        </div>
   </div>
 </template>
 
@@ -21,7 +20,6 @@ export default {
     props: {
         day: String,
         month: String,
-        text: String
     }
 
 }
@@ -41,20 +39,24 @@ export default {
 
     .day {
         font-weight: 400;
-        font-size: 180px;
+        font-size: 13vw;
         line-height: 1.1;
+        text-align: center;
     }
 
     .month {
-        font-size: 30px;
-        font-weight: 300;
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
     }
 
-    .text p {
-        
-        padding-top: 40px;
-        padding-left: 60px;
-        padding-top: 0 !important;
-        margin-top: 10px;
+    .location-text {
+        font-size: 22px;
+        font-weight: 300;
+        text-align: center;
+        padding-top: 43px;
+        text-align: center;
+        color: rgb(172, 172, 172);
     }
+
 </style>
