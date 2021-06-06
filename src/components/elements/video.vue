@@ -1,7 +1,7 @@
 <template>
   <div class="section no-border">
       <div class="video">
-          <iframe src="https://player.vimeo.com/video/498946704?background=1&autoplay=1&loop=1&byline=0&title=0?muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="https://player.vimeo.com/video/559666592?background=1&autoplay=1&loop=1&byline=0&title=0?muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
   </div>
 </template>

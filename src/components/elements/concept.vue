@@ -11,7 +11,7 @@
           <div class="subsection-text">
               <h1>Inviting everyone.</h1>
               <p>
-              “How do we tempt people from all levels of digital literacy to achieve data awareness and strengthen their position on Smart City technology?”
+              How do we tempt people from all levels of digital literacy to achieve data awareness and strengthen their position on Smart City technology?
               </p></div>
       </div>
       <div class="eye subsection reversed">
@@ -19,10 +19,9 @@
               <img src="../../assets/svg/eye.svg" />
           </div>
           <div class="subsection-text">
-              <h1>Visually communicating
-data collection.</h1>
+              <h1>Visually communicating data collection.</h1>
               <p>
-              “What does a common visual language about data collection in public space look like?”
+              What does a common visual language about data collection in public space look like?
               </p>
               </div>
       </div>
@@ -33,7 +32,7 @@ data collection.</h1>
           <div class="subsection-text">
               <h1>Situational awareness</h1>
               <p>
-              “How do we motivate people to walk along the Boulevard, not only more aware of the data collection, but also more aware of themselves?”
+              How do we motivate people to walk along the Boulevard, not only more aware of the data collection, but also more aware of themselves?
               </p>
               </div>
       </div>
