@@ -3,17 +3,17 @@
       <div class="with-love">◍ with love.</div>
       <div class="quick-links">
         <div class="footer-column">
-            <p class="footer-column-main">Sitemap</p>
-            <p class="footer-column-link">Main</p>
-            <p class="footer-column-link">Concept</p>
-            <p class="footer-column-link">Calendar</p>
-            <p class="footer-column-link">About us</p>
+            <a class="footer-column-main">Sitemap</a>
+            <a v-scroll-to="'#main-cnt'" class="footer-column-link">Main</a>
+            <a v-scroll-to="'#concept-cnt'" class="footer-column-link">Concept</a>
+            <a v-scroll-to="'#calendar-cnt'" class="footer-column-link">Calendar</a>
+            <a v-scroll-to="'#about-cnt'" class="footer-column-link">About us</a>
         </div>
         <div class="footer-column">
-            <p class="footer-column-main">Social</p>
-            <p class="footer-column-link">Instagram</p>
-            <p class="footer-column-link">Notion</p>
-            <p class="footer-column-link">Vimeo</p>
+            <a class="footer-column-main">Social</a>
+            <a class="footer-column-link">Instagram</a>
+            <a class="footer-column-link">Notion</a>
+            <a class="footer-column-link">Vimeo</a>
         </div>
       </div>
   </div>
@@ -55,10 +55,17 @@ export default {
 .footer-column {
     display: flex;
     flex-direction:  column;
+    cursor: pointer;
 }
 
-p {
+a {
+    text-decoration: none;
+    color: grey;
     padding: 8px 0;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .footer-column-main {

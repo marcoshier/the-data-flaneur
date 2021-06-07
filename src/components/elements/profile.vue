@@ -1,6 +1,7 @@
 <template>
     <div id="profile">
         <div class="pic">
+            <img :src="imageSource" />
         </div>
         <div class="name">
             {{ name }}
@@ -13,8 +14,12 @@
 export default {
     name: 'Profile',
     props: {
-        pic: String,
         name: String,
+    },
+    computed: {
+        imageSource() {
+            return require("../../assets/" + this.name.toLowerCase() + ".png")
+        }
     }
 }
 </script>
@@ -28,8 +33,14 @@ export default {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: white;
+    background: none;
     margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.pic img {
+    width: 200px;
+    height: 200px;
 }
 
 .name {
