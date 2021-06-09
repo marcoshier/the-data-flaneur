@@ -3,7 +3,7 @@
       <div class="section-title">
             <h1>{{ title }}
             </h1>
-            <h3>3</h3>
+            <h3>5</h3>
         </div>
       <div class="profiles subsection">
           <Profile name="Xiaoyao"/>

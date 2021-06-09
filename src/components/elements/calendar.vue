@@ -3,7 +3,7 @@
         <div class="section-title">
             <h1>{{ title }}
             </h1>
-            <h3>2</h3>
+            <h3>4</h3>
         </div>
       <div class="calendar subsection">
           <Date day="10-11" month="june 2021"/>     

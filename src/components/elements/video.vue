@@ -24,6 +24,8 @@ export default {
     width: 100vw;
     height: 100vh;
     pointer-events: none;
+    filter: brightness(1.3) contrast(1.1)
+    
 }
 
 .video iframe{

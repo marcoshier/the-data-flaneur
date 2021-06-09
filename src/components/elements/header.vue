@@ -3,7 +3,7 @@
       <div class="logo">The Data Flâneur</div>
       <ul class="menu">
           <li><a href="#" v-scroll-to="'#main-cnt'">Home</a></li>
-          <li><a href="#" v-scroll-to="'#concept-cnt'">Concept</a></li>
+          <li><a href="#" v-scroll-to="'#components-cnt'">Concept</a></li>
           <li><a href="#" v-scroll-to="'#calendar-cnt'">Calendar</a></li>
           <li><a href="#" v-scroll-to="'#about-cnt'">About</a></li>
             
@@ -12,6 +12,12 @@
           <svg id="btn" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.98 79.02"><path d="M16,35.36h9.19a20.79,20.79,0,0,0,12.22-4l2.12-1.54a20.07,20.07,0,0,1,23.27-.21l2.74,1.92a21.08,21.08,0,0,0,12.06,3.8h34.09" transform="translate(-15.95 -23.03)" class="menu-svg"/><path d="M16.23,68.67H27.92a21.18,21.18,0,0,0,7.87-1.51L43.86,64a19.59,19.59,0,0,1,14.37,0l8.3,3.25a21.64,21.64,0,0,0,7.83,1.48h37.56" transform="translate(-15.95 -23.03)" class="menu-svg"/><path d="M16,99.05h15a21.67,21.67,0,0,0,2.42-.13l11.72-1.31a54.6,54.6,0,0,1,11.92,0l12.33,1.34a21.43,21.43,0,0,0,2.27.12h40" transform="translate(-15.95 -23.03)" class="menu-svg"/></svg>
       </div>
       <div id="menu-mobile" class="hidden">
+          <div class="close-button" v-on:click="hide">
+              <span class="x-one">
+              </span>
+              <span class="x-two">
+              </span>
+          </div>
           <ul class="menu-mobile-entries">
             <li><a href="#"  v-on:click="hide" v-scroll-to="'#main-cnt'" >Home</a></li>
             <li><a href="#"  v-on:click="hide" v-scroll-to="'#concept-cnt'">Concept</a></li>
@@ -80,6 +86,7 @@ export default {
     .logo {
         font-size: 29px;
         margin-left: 40px;
+        z-index: 100;
     }
 
     .menu {
@@ -125,6 +132,34 @@ export default {
         height: 30px;
         margin-top: -5px;
         cursor: pointer;
+    }
+
+    .close-button {
+        position: relative;
+        float: right;
+        right: 30px;
+        top: 47px;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .close-button span {
+        position: absolute;
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: white;
+        transform-origin: center;
+    }
+
+    .close-button span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    .close-button span:nth-child(2) {
+        transform: rotate(-45deg);
     }
 
     #menu-mobile {
